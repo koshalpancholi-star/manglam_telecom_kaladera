@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showroom Gallery | Manglam Telecom</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav id="navbar" class="glass-nav">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo"><span class="orange-text">Manglam</span>Telecom</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" style="padding-top: 120px; min-height: 80vh;">
+        <h1 class="section-title">Store <span class="orange-text">Gallery</span></h1>
+        <div class="masonry-grid" style="column-count: 3; column-gap: 20px;">
+            <div class="glass-card gallery-item" style="margin-bottom: 20px; overflow: hidden; border-radius: 15px; cursor: pointer;">
+                <div style="height: 250px; display: flex; align-items: center; justify-content: center; background: #222; color: var(--primary-orange); font-weight: bold;">Premium Counter Display</div>
+            </div>
+            <div class="glass-card gallery-item" style="margin-bottom: 20px; overflow: hidden; border-radius: 15px; cursor: pointer;">
+                <div style="height: 350px; display: flex; align-items: center; justify-content: center; background: #333; color: var(--primary-orange); font-weight: bold;">Smartphone Showcase</div>
+            </div>
+            <div class="glass-card gallery-item" style="margin-bottom: 20px; overflow: hidden; border-radius: 15px; cursor: pointer;">
+                <div style="height: 200px; display: flex; align-items: center; justify-content: center; background: #1a1a1a; color: var(--primary-orange); font-weight: bold;">Accessories Hub</div>
+            </div>
+        </div>
+    </main>
+
+    <div id="lightbox" style="display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.95); z-index: 10000; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
+        <span id="closeLightbox" style="position: absolute; top: 30px; right: 40px; font-size: 3rem; cursor: pointer;">&times;</span>
+        <div id="lightboxContent">Premium View</div>
+    </div>
+
+    <div class="mobile-bottom-nav glass-nav">
+        <a href="index.html"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="products.html"><i class="fas fa-mobile-alt"></i><span>Phones</span></a>
+        <a href="offers.html"><i class="fas fa-tags"></i><span>Offers</span></a>
+        <a href="contact.html"><i class="fas fa-map-marker-alt"></i><span>Locate</span></a>
+    </div>
+
+    <script src="js/gallery.js"></script>
+</body>
+</html>
