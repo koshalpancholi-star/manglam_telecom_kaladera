@@ -1,1 +1,0 @@
-console.log('Manglam Telecom website loaded');
